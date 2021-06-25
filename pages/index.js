@@ -1,19 +1,9 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export const Homepage = (props) => {
-  debugger  
-  console.log(serverSideTranslations())
-  // const router = useRouter()
 
-  const router = {
-    locale: 'en'
-  }
-  const { t, i18n, ...rest } = useTranslation('common')
-  debugger
+  const { t } = useTranslation('common')
   return (
     <>
       <main>
